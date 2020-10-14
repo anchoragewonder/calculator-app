@@ -25,23 +25,24 @@ namespace CalculatorApp
             Console.WriteLine("enter operator,  +  -  *  /  :");
             string oper = (Console.ReadLine());
 
+            float answer;
             switch (oper)
             {
+                default:
+                    answer = 0;
+                    break;
+
                 case "+":
                     
-                    float ans = addition.sumnum(num1, num2);
-
-                    Console.WriteLine("Your answer is:" + ans );
+                    answer = new Addition().Execute(num1, num2);
                     break;
 
                 case "-":
-                    float ans2 = subtract.subnum(num1, num2);
-
-                    Console.WriteLine("Your answer is:" + ans2);
+                    answer = new Subtraction().Execute(num1, num2);
                     break;
-
             }
 
+            Console.WriteLine("Your answer is:" + answer);
         }
     }
 }

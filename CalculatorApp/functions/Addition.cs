@@ -2,7 +2,7 @@
 
 using CalculatorApp.functions;
 
-public class addition : IFunctionInterface
+public class Addition : IFunctionInterface
 {
     public float Execute(float first, float second)
     {
