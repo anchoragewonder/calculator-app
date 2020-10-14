@@ -1,8 +1,13 @@
 ﻿using System;
 
-public class Class1
+public class subtract
 {
-	public Class1()
+	public static float subnum(float first, float second)
 	{
-	}
+            float answer = first - second;
+
+            return answer;
+
+        }
 }
+

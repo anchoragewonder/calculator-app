@@ -4,9 +4,11 @@ using System;
 public class addition
 {
   
-    public static void sumnum(float first, float second)
+    public static float sumnum(float first, float second)
     {
         float answer = first + second;
+
+        return answer;
 
     }
 }

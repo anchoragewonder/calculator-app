@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO.Pipes;
 
 namespace CalculatorApp
 {
@@ -27,9 +28,18 @@ namespace CalculatorApp
             switch (oper)
             {
                 case "+":
+                    
                     float ans = addition.sumnum(num1, num2);
+
                     Console.WriteLine("Your answer is:" + ans );
                     break;
+
+                case "-":
+                    float ans2 = subtract.subnum(num1, num2);
+
+                    Console.WriteLine("Your answer is:" + ans2);
+                    break;
+
             }
 
         }
