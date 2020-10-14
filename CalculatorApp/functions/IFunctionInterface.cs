@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace CalculatorApp.functions
 {
     public interface IFunctionInterface

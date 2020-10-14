@@ -10,4 +10,3 @@ public class Subtraction : IFunctionInterface
         return answer;
     }
 }
-

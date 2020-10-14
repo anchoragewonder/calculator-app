@@ -10,4 +10,3 @@ public class Addition : IFunctionInterface
         return answer;
     }
 }
-	
