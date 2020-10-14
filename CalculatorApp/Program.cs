@@ -24,7 +24,8 @@ namespace CalculatorApp
                 
                 Console.WriteLine("enter first number:");
                 float num1 = float.Parse(Console.ReadLine());
-                while(float.IsNaN(num1))
+                bool result = float.IsNaN(num1);
+                while(result)
                 {
                     Console.WriteLine("Please enter a valid number:");
                     num1 = float.Parse(Console.ReadLine());
