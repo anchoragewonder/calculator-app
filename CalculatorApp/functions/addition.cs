@@ -17,10 +17,6 @@ public class addition : Inumbers
         Console.WriteLine("enter second number:");
         float num2 = float.Parse(Console.ReadLine());
     }
-    public void add()
-    {
-        Console.WriteLine("Your answer is ")
-
-    }
+    
 }
 	
