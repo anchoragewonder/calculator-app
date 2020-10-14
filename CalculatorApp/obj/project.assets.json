@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ancho\\source\\repos\\CalculatorApp\\CalculatorApp.csproj",
+      "projectUniqueName": "C:\\Github\\calulator\\calculator-app\\CalculatorApp\\CalculatorApp.csproj",
       "projectName": "CalculatorApp",
-      "projectPath": "C:\\Users\\ancho\\source\\repos\\CalculatorApp\\CalculatorApp.csproj",
+      "projectPath": "C:\\Github\\calulator\\calculator-app\\CalculatorApp\\CalculatorApp.csproj",
       "packagesPath": "C:\\Users\\ancho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ancho\\source\\repos\\CalculatorApp\\obj\\",
+      "outputPath": "C:\\Github\\calulator\\calculator-app\\CalculatorApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ancho\\AppData\\Roaming\\NuGet\\NuGet.Config",

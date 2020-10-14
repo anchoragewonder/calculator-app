@@ -1,13 +1,11 @@
 ﻿using CalculatorApp;
 using System;
 
-public class addition : Inumbers 
+public class addition
 {
-   
-
     public void getnum()
     {
-        
+
         Console.WriteLine("enter first number:");
         float num1 = float.Parse(Console.ReadLine());
 
@@ -18,5 +16,10 @@ public class addition : Inumbers
         float num2 = float.Parse(Console.ReadLine());
     }
     
+    public static void sumnum(float first, float second)
+    {
+        float ans = first + second;
+
+    }
 }
 	

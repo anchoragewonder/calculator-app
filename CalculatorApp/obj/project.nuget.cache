@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pr2h9YH0U/229LYdYAIq9A3ScGHGBWsXvGB4zFk3SILlhKdSN69JLyHlpsZbc2qdNUpFCL6CBm1mW7DiH30W6A==",
+  "dgSpecHash": "HuBLcFX2Wn9o29UY5KsU2rUlAMyD0c0lWCarKo0LpVkJ+hLWqK2/ezTol6tFNef2bfXdWTs89LVTUMwNvfMp4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ancho\\source\\repos\\CalculatorApp\\CalculatorApp.csproj",
+  "projectFilePath": "C:\\Github\\calulator\\calculator-app\\CalculatorApp\\CalculatorApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
