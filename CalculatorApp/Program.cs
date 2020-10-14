@@ -22,7 +22,7 @@ namespace CalculatorApp
             float num2 = float.Parse(Console.ReadLine());
 
             Console.WriteLine("enter operator,  +  -  *  /  :");
-            string oper = char.Parse(Console.ReadLine());
+            string oper = (Console.ReadLine());
 
             switch (oper)
             {
