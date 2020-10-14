@@ -14,35 +14,57 @@ namespace CalculatorApp
 
     static void Main(string[] args)
         {
+            bool appEnd = false;
+
             Console.WriteLine("Your go to C# calculator");
+            Console.WriteLine("-------------------------");
 
-            Console.WriteLine("enter first number:");
-            float num1 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("enter second number:");
-            float num2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("enter operator,  +  -  *  /  :");
-            string oper = (Console.ReadLine());
-
-            float answer;
-            switch (oper)
+            while (!appEnd)
             {
-                default:
-                    answer = 0;
-                    break;
+                Console.WriteLine("enter first number:");
+                float num1 = float.Parse(Console.ReadLine());
 
-                case "+":
-                    
-                    answer = new Addition().Execute(num1, num2);
-                    break;
+                Console.WriteLine("enter second number:");
+                float num2 = float.Parse(Console.ReadLine());
 
-                case "-":
-                    answer = new Subtraction().Execute(num1, num2);
-                    break;
+                Console.WriteLine("enter operator,  +  -  *  /  :");
+                string oper = (Console.ReadLine());
+
+                float answer;
+                switch (oper)
+                {
+                    default:
+                        answer = 0;
+                        break;
+
+                    case "+":
+                        answer = new Addition().Execute(num1, num2);
+                        break;
+
+                    case "-":
+                        answer = new Subtraction().Execute(num1, num2);
+                        break;
+
+                    case "*":
+                        answer = new multiply().Execute(num1, num2);
+                        break;
+
+                    case "/":
+                        while (num2 == 0)
+                        {
+                            Console.WriteLine("enter non zero number to divide by:");
+                            num2 = float.Parse(Console.ReadLine());
+                        }
+                        answer = new divide().Execute(num1, num2);
+                        break;
+                }
+
+                Console.WriteLine($"Your answer is: {num1} {oper} {num2} = {answer}");
+                Console.WriteLine("Press c and enter to close or enter to continue");
+
+                if(Console.ReadLine() == "c") appEnd = true;
             }
-
-            Console.WriteLine("Your answer is:" + answer);
+            return;
         }
     }
 }
