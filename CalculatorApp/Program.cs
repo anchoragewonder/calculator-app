@@ -21,16 +21,28 @@ namespace CalculatorApp
 
             while (!appEnd)
             {
+                
                 Console.WriteLine("enter first number:");
                 float num1 = float.Parse(Console.ReadLine());
+                while(float.IsNaN(num1))
+                {
+                    Console.WriteLine("Please enter a valid number:");
+                    num1 = float.Parse(Console.ReadLine());
+                }
 
                 Console.WriteLine("enter second number:");
                 float num2 = float.Parse(Console.ReadLine());
+                while (float.IsNaN(num2))
+                {
+                    Console.WriteLine("Please enter a valid number:");
+                    num2 = float.Parse(Console.ReadLine());
+                }
 
                 Console.WriteLine("enter operator,  +  -  *  /  :");
                 string oper = (Console.ReadLine());
 
                 float answer;
+
                 switch (oper)
                 {
                     default:
