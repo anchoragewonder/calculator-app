@@ -16,54 +16,40 @@ namespace CalculatorApp
         {
             bool appEnd = false;
        
-
             Console.WriteLine("Your go to C# calculator");
             Console.WriteLine("-------------------------");
 
             while (!appEnd)
-            {
-                bool result = true;
-
+            {                
                 Console.WriteLine("enter first number:");
-                float num1 = float.Parse(Console.ReadLine());
-                if (float.IsNaN(num1)) result = false;
-
-                while(!result)
+                float num1;
+                while(!float.TryParse(Console.ReadLine(), out num1))
                 {
-                    Console.WriteLine("Please enter a valid number:");
-                    num1 = float.Parse(Console.ReadLine());
-                    if (float.IsNaN(num1))
-                    { result = false;
-                    }
-                    else
-                    {
-                        result = true;
-                    }
+                    Console.WriteLine("please enter a valid number:");
                 }
-
+                                                     
                 Console.WriteLine("enter second number:");
-                float num2 = float.Parse(Console.ReadLine());
-                while (float.IsNaN(num2))
+                float num2;
+                while (!float.TryParse(Console.ReadLine(), out num2))
                 {
                     Console.WriteLine("Please enter a valid number:");
-                    num2 = float.Parse(Console.ReadLine());
                 }
 
                 Console.WriteLine("enter operator,  +  -  *  /  :");
-                string oper = (Console.ReadLine());
-
+                string oper = Console.ReadLine();
+                while(!(oper.Contains("+") || oper.Contains("/") || oper.Contains("*") || oper.Contains("-")))
+                {
+                    Console.WriteLine("please enter valid operator, +  -  *  /  :");
+                    oper = Console.ReadLine();
+                }
+                                
                 float answer;
 
                 switch (oper)
                 {
                     default:
                         answer = 0;
-                        while (oper != "+"|| oper != "-")
-                        {
-                            Console.WriteLine("please enter a valid operator,  +  -  *  /  :");
-                            oper = (Console.ReadLine());
-                          
-                        }
+                       
                         break;
 
                     case "+":
