@@ -15,20 +15,30 @@ namespace CalculatorApp
     static void Main(string[] args)
         {
             bool appEnd = false;
+       
 
             Console.WriteLine("Your go to C# calculator");
             Console.WriteLine("-------------------------");
 
             while (!appEnd)
             {
-                
+                bool result = true;
+
                 Console.WriteLine("enter first number:");
                 float num1 = float.Parse(Console.ReadLine());
-                bool result = float.IsNaN(num1);
-                while(result)
+                if (float.IsNaN(num1)) result = false;
+
+                while(!result)
                 {
                     Console.WriteLine("Please enter a valid number:");
                     num1 = float.Parse(Console.ReadLine());
+                    if (float.IsNaN(num1))
+                    { result = false;
+                    }
+                    else
+                    {
+                        result = true;
+                    }
                 }
 
                 Console.WriteLine("enter second number:");
@@ -48,6 +58,12 @@ namespace CalculatorApp
                 {
                     default:
                         answer = 0;
+                        while (oper != "+"|| oper != "-")
+                        {
+                            Console.WriteLine("please enter a valid operator,  +  -  *  /  :");
+                            oper = (Console.ReadLine());
+                          
+                        }
                         break;
 
                     case "+":
