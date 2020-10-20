@@ -1,13 +1,12 @@
 ﻿using System;
 
-using CalculatorApp.functions;
+using CalculatorApp.Functions;
 
-public class divide : IFunctionInterface
+public class Divide : IFunctionInterface
 {
     public float Execute(float first, float second)
     {
-        float answer = first / second;
-        return answer;
+        return first / second;
     }
 }
 

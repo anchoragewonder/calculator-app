@@ -1,12 +1,11 @@
 ﻿using System;
 
-using CalculatorApp.functions;
+using CalculatorApp.Functions;
 
 public class Subtraction : IFunctionInterface
 {
 	public float Execute(float first, float second)
 	{
-        float answer = first - second;
-        return answer;
+        return first - second;
     }
 }

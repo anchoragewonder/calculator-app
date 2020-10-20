@@ -1,13 +1,12 @@
 ﻿using System;
 
-using CalculatorApp.functions;
+using CalculatorApp.Functions;
 
-public class multiply : IFunctionInterface
+public class Multiply : IFunctionInterface
 {
     public float Execute(float first, float second)
     {
-        float answer = first * second;
-        return answer;
+        return first * second;
     }
 }
 
