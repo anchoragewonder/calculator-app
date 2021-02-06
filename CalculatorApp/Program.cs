@@ -29,7 +29,7 @@ namespace CalculatorApp
                 float num2 = GetNumber(SECOND_NUMBER);
                 string oper = GetOperator();
 
-                float answer = CalculateAnswer(num1, num2, oper);
+                float answer = CalculateAnswer(num1, num2, oper); 
                 Console.WriteLine($"Your answer is: {num1} {oper} {num2} = {answer}");
 
                 Console.WriteLine(CLOSE);
